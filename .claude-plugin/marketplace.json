@@ -1,6 +1,6 @@
 {
   "name": "doubao-skills",
-  "description": "Doubao Work user skills: 战略陪跑教练 zhanlue-peipao + 内容创业实操教练 qingchuang-shizhan",
+  "description": "Doubao Work user skills: 战略陪跑教练 zhanlue-peipao + 内容创业实操教练 qingchuang-shizhan + 内容审核与原创改造 content-audit-rewrite",
   "owner": {
     "name": "lichengyu1207"
   },
@@ -14,6 +14,11 @@
       "name": "qingchuang-shizhan",
       "source": "./qingchuang-shizhan",
       "description": "内容创业与轻创业实操教练：定位、内容生产、多平台分发、获客私域、合规变现、现金流风控"
+    },
+    {
+      "name": "content-audit-rewrite",
+      "source": "./content-audit-rewrite",
+      "description": "内容审核与原创改造：原创性判定、限流风险词库与替换、观点化改造、风格统一"
     }
   ]
 }
