@@ -9,10 +9,11 @@
 | [zhanlue-peipao](zhanlue-peipao/) | 战略陪跑教练：自媒体/创业/副业/企业四场景 × 10万/100万/1000万三档目标的诊断、路线图、里程碑与复盘 |
 | [qingchuang-shizhan](qingchuang-shizhan/) | 内容创业与轻创业实操教练：定位、内容生产、多平台分发、获客私域、合规变现、现金流风控 |
 | [content-audit-rewrite](content-audit-rewrite/) | 内容审核与原创改造：原创性判定、限流风险词库与替换、观点化改造、风格统一 |
+| [pi-jev](pi-jev/) | 决策层：Jev 式自动选技能 + 模型档位路由 + 使用学习；新任务先跑它确定用哪个技能 |
 
 ## 快速安装（zip 方式）
 
-下载本仓库的 zip 压缩包并解压，把 `zhanlue-peipao/` 与 `qingchuang-shizhan/` 两个文件夹复制到目标平台用户技能目录即可：
+下载本仓库的 zip 压缩包并解压，把 `zhanlue-peipao/`、`qingchuang-shizhan/`、`pi-jev/` 等技能文件夹复制到目标平台用户技能目录即可：
 
 - 豆包办公：`workspace/.user_skills/`
 - Claude Code：`~/.claude/skills/`
@@ -28,6 +29,7 @@
 claude plugin marketplace add lichengyu1207/yihaiyoudao-skills
 claude plugin install zhanlue-peipao@yihaiyoudao-skills
 claude plugin install qingchuang-shizhan@yihaiyoudao-skills
+claude plugin install pi-jev@yihaiyoudao-skills
 ```
 或直接复制技能文件夹到技能目录：
 ```bash
@@ -44,12 +46,14 @@ gemini skills install https://github.com/lichengyu1207/yihaiyoudao-skills.git
 ```bash
 gh skill install lichengyu1207/yihaiyoudao-skills zhanlue-peipao
 gh skill install lichengyu1207/yihaiyoudao-skills qingchuang-shizhan
+gh skill install lichengyu1207/yihaiyoudao-skills pi-jev
 ```
 
 ### Claude 系（npx skills）
 ```bash
 npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill zhanlue-peipao
 npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill qingchuang-shizhan
+npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill pi-jev
 ```
 
 ### AWS Bedrock AgentCore
@@ -62,9 +66,10 @@ npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill q
 
 - "帮我规划从零到年入100万的自媒体路线" → zhanlue-peipao
 - "副业如何起步并稳定变现" → qingchuang-shizhan
+- "拿不准该用哪个技能" → pi-jev 决策层（`python pi-jev/scripts/pi_jev.py "任务"`，自动推荐技能、脚本命令与模型档位）
 
 ## 说明
 
 - 所有技能坚持：真实宣传、合规经营、不承诺收益、不碰灰产。
 - 技能内容持续迭代，欢迎 issue 反馈。
-- 仓库结构：每个技能文件夹含 `SKILL.md` + `references/` + `.claude-plugin/plugin.json`，兼容主流平台技能格式。
+- 仓库结构：每个技能文件夹含 `SKILL.md` + `references/` + `.claude-plugin/plugin.json`，兼容主流平台技能格式；`pi-jev/` 为决策层（`SKILL.md` + `scripts/` + `memory/`，纯 Python 实现，无需 API 密钥，越用越准）。
