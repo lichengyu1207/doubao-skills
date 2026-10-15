@@ -1,6 +1,6 @@
 {
   "name": "yihaiyoudao-skills",
-  "description": "面向自媒体/创业/副业/企业的赋能技能集：战略陪跑教练 zhanlue-peipao + 内容创业实操教练 qingchuang-shizhan + 内容审核与原创改造 content-audit-rewrite",
+  "description": "面向自媒体/创业/副业/企业的赋能技能集：战略陪跑教练 zhanlue-peipao + 内容创业实操教练 qingchuang-shizhan + 内容审核与原创改造 content-audit-rewrite + pi-jev 决策层",
   "owner": {
     "name": "lichengyu1207"
   },
@@ -19,6 +19,11 @@
       "name": "content-audit-rewrite",
       "source": "./content-audit-rewrite",
       "description": "内容审核与原创改造：原创性判定、限流风险词库与替换、观点化改造、风格统一"
+    },
+    {
+      "name": "pi-jev",
+      "source": "./pi-jev",
+      "description": "决策层：Jev 式自动选技能 + 模型档位路由 + 使用学习；新任务先跑它确定用哪个技能"
     }
   ]
 }
