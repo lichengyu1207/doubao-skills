@@ -73,3 +73,12 @@ npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill p
 - 所有技能坚持：真实宣传、合规经营、不承诺收益、不碰灰产。
 - 技能内容持续迭代，欢迎 issue 反馈。
 - 仓库结构：每个技能文件夹含 `SKILL.md` + `references/` + `.claude-plugin/plugin.json`，兼容主流平台技能格式；`pi-jev/` 为决策层（`SKILL.md` + `scripts/` + `memory/`，纯 Python 实现，无需 API 密钥，越用越准）。
+
+## 版权与支持
+
+© 2026 骇老师（AI+IP 陪跑变现操盘手）· https://github.com/lichengyu1207
+
+- 本仓库是**开源框架**：可下载学习、可自由用于自己的业务。
+- **禁止未授权转售 / 冒充原创 / 抹名分发**（详见 [LICENSE.md](LICENSE.md)）。
+- 想转售？走 **C 转 B 授权**（详见 [PARTNER.md](PARTNER.md)）。
+- 如果这套框架对你有帮助，**点一个 ⭐**——这是对作者最实在的支持，也是这套包持续更新的动力。
