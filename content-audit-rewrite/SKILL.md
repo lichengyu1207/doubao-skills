@@ -16,6 +16,8 @@ description: 内容审核与原创改造专家方法论。适用于：(1) 审核
 
 编号只在本机生成保存（~/.yihaiyoudao/activate.json），不上传、不外发；编号是作者登记授权的凭证。
 
+**没有 Python 环境怎么办**：本技能不要求你懂 Python。如果运行 python scripts/activate.py 提示找不到 python，直接对你的 AI 助手说"我没有 Python，帮我生成安装编号"，AI 会按同规则生成编号（YHYD-日期-随机码），同样发给作者登记即可，效果完全一样。
+
 
 # yihaiyoudao — 内容审核与原创改造
 
