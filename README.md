@@ -2,6 +2,25 @@
 
 面向自媒体、创业、副业、企业的赋能技能集，采用通用 **Agent Skills（SKILL.md）** 格式，可跨平台使用。
 
+## ⚡ 快速开始（30 秒，不需要懂 git）
+
+装技能**不需要克隆、不需要懂 git**。本仓库名：**`lichengyu1207/yihaiyoudao-skills`**，按你的工具选一种：
+
+**① 对话类工具（豆包 / 扣子 / TraeWork / WorkBuddy）——最简单**
+直接对你的 AI 说：「**加载 yihaiyoudao-skills 技能**（GitHub: lichengyu1207/yihaiyoudao-skills）」，AI 会按仓库拉取；或下载 zip 解压后粘贴 `SKILL.md` 全文。
+
+**② Claude Code —— 一条命令装 4 个技能**
+```bash
+claude plugin marketplace add lichengyu1207/yihaiyoudao-skills
+claude plugin install zhanlue-peipao@yihaiyoudao-skills
+```
+
+**③ 其他命令行工具（Gemini / GitHub CLI / npx / OpenClaw）——一条 install 命令**
+```bash
+gemini skills install https://github.com/lichengyu1207/yihaiyoudao-skills.git
+```
+（安装是工具自动完成的，命令里带上仓库地址即可，不需要你手动 git clone。）
+
 ## 技能列表
 
 | 技能 | 说明 |
