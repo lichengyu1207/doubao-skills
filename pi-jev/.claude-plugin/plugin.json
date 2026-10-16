@@ -1,0 +1,7 @@
+{
+  "name": "pi-jev",
+  "description": "决策层：Jev 式自动选技能 + 模型档位路由 + 使用学习；新任务先跑它确定用哪个技能",
+  "version": "1.0.0",
+  "author": "lichengyu1207",
+  "license": "custom"
+}
