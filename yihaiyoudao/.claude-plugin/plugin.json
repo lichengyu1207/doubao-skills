@@ -1,0 +1,7 @@
+{
+  "name": "yihaiyoudao",
+  "description": "内容审核与原创改造：原创性判定、限流风险词库与替换、观点化改造、风格统一",
+  "version": "1.0.0",
+  "author": "lichengyu1207",
+  "license": "custom"
+}
