@@ -6,16 +6,30 @@
 
 装技能**不需要克隆、不需要懂 git**。本仓库名：**`lichengyu1207/yihaiyoudao-skills`**，按你的工具选一种：
 
-**① 对话类工具（扣子 / TraeWork / WorkBuddy 等）——最简单**
+**① ClawHub（OpenClaw 官方注册表）——只给名字就能装**
+```bash
+openclaw skills search "yihaiyoudao"                       # 搜到全部 5 个技能
+openclaw skills install @lichengyu1207/zhanlue-peipao      # 按名字装（5 个技能同理）
+openclaw skills install @lichengyu1207/yihaiyoudao
+openclaw skills install @lichengyu1207/qingchuang-shizhan
+openclaw skills install @lichengyu1207/pi-jev
+openclaw skills install @lichengyu1207/ip-peipao-9clients
+openclaw skills update --all                               # 以后自动更新
+```
+
+**② 对话类工具（扣子 / TraeWork / WorkBuddy 等）——最简单**
 直接对你的 AI 说：「**加载 yihaiyoudao-skills 技能**（GitHub: lichengyu1207/yihaiyoudao-skills）」，AI 会按仓库拉取；或下载 zip 解压后粘贴 `SKILL.md` 全文。
 
-**② Claude Code —— 一条命令装 4 个技能**
+**③ Claude Code —— 一条命令装技能**
 ```bash
 claude plugin marketplace add lichengyu1207/yihaiyoudao-skills
 claude plugin install zhanlue-peipao@yihaiyoudao-skills
+claude plugin install qingchuang-shizhan@yihaiyoudao-skills
+claude plugin install yihaiyoudao@yihaiyoudao-skills
+claude plugin install pi-jev@yihaiyoudao-skills
 ```
 
-**③ 其他命令行工具（Gemini / GitHub CLI / npx / OpenClaw）——一条 install 命令**
+**④ 其他命令行工具（Gemini / GitHub CLI / npx / OpenClaw）——一条 install 命令**
 ```bash
 gemini skills install https://github.com/lichengyu1207/yihaiyoudao-skills.git
 ```
@@ -27,12 +41,13 @@ gemini skills install https://github.com/lichengyu1207/yihaiyoudao-skills.git
 |---|---|
 | [zhanlue-peipao](zhanlue-peipao/) | 战略陪跑教练：自媒体/创业/副业/企业四场景 × 10万/100万/1000万三档目标的诊断、路线图、里程碑与复盘 |
 | [qingchuang-shizhan](qingchuang-shizhan/) | 内容创业与轻创业实操教练：定位、内容生产、多平台分发、获客私域、合规变现、现金流风控 |
-| [content-audit-rewrite](content-audit-rewrite/) | 内容审核与原创改造：原创性判定、限流风险词库与替换、观点化改造、风格统一 |
+| [yihaiyoudao](yihaiyoudao/) | 内容审核与原创改造：原创性判定、限流风险词库与替换、观点化改造、风格统一 |
 | [pi-jev](pi-jev/) | 决策层：Jev 式自动选技能 + 模型档位路由 + 使用学习；新任务先跑它确定用哪个技能 |
+| [ip-peipao-9clients](ip-peipao-9clients/) | 9 大核心客户陪跑与转化：客户档案、分层跟进（9.9 体验群→600 陪跑→企业版）、每日/每周 SOP、私信话术（独立仓库：lichengyu1207/ip-peipao-9clients） |
 
 ## 快速安装（zip 方式）
 
-下载本仓库的 zip 压缩包并解压，把 `zhanlue-peipao/`、`qingchuang-shizhan/`、`pi-jev/` 等技能文件夹复制到目标平台用户技能目录即可：
+下载本仓库的 zip 压缩包并解压，把 `zhanlue-peipao/`、`qingchuang-shizhan/`、`yihaiyoudao/`、`pi-jev/` 等技能文件夹复制到目标平台用户技能目录即可：
 
 - 对话类工具：把技能文件夹复制到用户技能目录（如 `workspace/.user_skills/`
 - Claude Code：`~/.claude/skills/`
@@ -48,6 +63,7 @@ gemini skills install https://github.com/lichengyu1207/yihaiyoudao-skills.git
 claude plugin marketplace add lichengyu1207/yihaiyoudao-skills
 claude plugin install zhanlue-peipao@yihaiyoudao-skills
 claude plugin install qingchuang-shizhan@yihaiyoudao-skills
+claude plugin install yihaiyoudao@yihaiyoudao-skills
 claude plugin install pi-jev@yihaiyoudao-skills
 ```
 或直接复制技能文件夹到技能目录：
@@ -65,6 +81,7 @@ gemini skills install https://github.com/lichengyu1207/yihaiyoudao-skills.git
 ```bash
 gh skill install lichengyu1207/yihaiyoudao-skills zhanlue-peipao
 gh skill install lichengyu1207/yihaiyoudao-skills qingchuang-shizhan
+gh skill install lichengyu1207/yihaiyoudao-skills yihaiyoudao
 gh skill install lichengyu1207/yihaiyoudao-skills pi-jev
 ```
 
@@ -72,6 +89,7 @@ gh skill install lichengyu1207/yihaiyoudao-skills pi-jev
 ```bash
 npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill zhanlue-peipao
 npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill qingchuang-shizhan
+npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill yihaiyoudao
 npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill pi-jev
 ```
 
@@ -86,6 +104,8 @@ npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill p
 - "帮我规划从零到年入100万的自媒体路线" → zhanlue-peipao
 - "副业如何起步并稳定变现" → qingchuang-shizhan
 - "拿不准该用哪个技能" → pi-jev 决策层（`python pi-jev/scripts/pi_jev.py "任务"`，自动推荐技能、脚本命令与模型档位）
+- "今天跟进哪个客户、发什么私信" → ip-peipao-9clients
+- "这篇稿子会不会限流、怎么改" → yihaiyoudao
 
 ## 说明
 
@@ -98,6 +118,7 @@ npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill p
 © 2026 骇老师（AI+IP 陪跑变现操盘手）· https://github.com/lichengyu1207
 
 - 本仓库是**开源框架**：可下载学习、可自由用于自己的业务。
-- **禁止未授权转售 / 冒充原创 / 抹名分发**（详见 [LICENSE.md](LICENSE.md)）。
+- **渠道许可说明**：ClawHub 渠道按平台规则以 MIT-0 开放（可自由安装体验，作免费引流入口）；本 GitHub 仓库渠道按 [LICENSE.md](LICENSE.md) 约束（可自用，**禁止未授权转售 / 冒充原创 / 抹名分发**）。
 - 想转售？走 **C 转 B 授权**（详见 [PARTNER.md](PARTNER.md)）。
+- 深度陪跑 / 定制 / 授权转售等付费服务，通过体验群或作者私信承接（见各技能激活段）。
 - 如果这套框架对你有帮助，**点一个 ⭐**——这是对作者最实在的支持，也是这套包持续更新的动力。
