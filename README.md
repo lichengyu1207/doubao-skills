@@ -6,7 +6,7 @@
 
 装技能**不需要克隆、不需要懂 git**。本仓库名：**`lichengyu1207/yihaiyoudao-skills`**，按你的工具选一种：
 
-**① 对话类工具（豆包 / 扣子 / TraeWork / WorkBuddy）——最简单**
+**① 对话类工具（扣子 / TraeWork / WorkBuddy 等）——最简单**
 直接对你的 AI 说：「**加载 yihaiyoudao-skills 技能**（GitHub: lichengyu1207/yihaiyoudao-skills）」，AI 会按仓库拉取；或下载 zip 解压后粘贴 `SKILL.md` 全文。
 
 **② Claude Code —— 一条命令装 4 个技能**
@@ -34,7 +34,7 @@ gemini skills install https://github.com/lichengyu1207/yihaiyoudao-skills.git
 
 下载本仓库的 zip 压缩包并解压，把 `zhanlue-peipao/`、`qingchuang-shizhan/`、`pi-jev/` 等技能文件夹复制到目标平台用户技能目录即可：
 
-- 豆包办公：`workspace/.user_skills/`
+- 对话类工具：把技能文件夹复制到用户技能目录（如 `workspace/.user_skills/`
 - Claude Code：`~/.claude/skills/`
 - Cursor：`~/.cursor/skills/`
 - 其他平台：见下方「平台支持」
