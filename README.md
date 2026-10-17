@@ -107,6 +107,18 @@ npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill p
 - "今天跟进哪个客户、发什么私信" → ip-peipao-9clients
 - "这篇稿子会不会限流、怎么改" → yihaiyoudao
 
+## 配套软件：一鉴到底（yijiandaodi）
+
+技能包管「把专业变成能卖的产品」（方法、内容产品、陪跑服务）；**一鉴到底是同一产品线的软件产品：AI 操作行为安全审计桌面端**（本地优先，检测在本地完成，原始数据不上传）。
+
+- Windows 安装包：https://yijiandaodi.com/download （零依赖，免装 Node.js / Python）
+- 源码仓库（Apache 2.0）：[github.com/lichengyu1207/yijiandaodi-core](https://github.com/lichengyu1207/yijiandaodi-core)
+- npm SDK（开发者 / 企业集成）：`@lichengyu1207/yijiandaodi-security-core`
+
+核心能力：操作白盒化（AI 每一步可追溯 / 可验证 / 可拦截）、链式存证（哈希链不可篡改 + 合规报告导出）、文件 / 剪贴板监控、风险拦截 + 意图分析、AIGC 本地校验、账号互通 + 月度账单。
+
+**和技能包的关系**：一条产品线，两件产品——技能包把你的专业变成产品，一鉴到底给 AI 交付上安全锁与存证，客户更敢买、更敢续。分销 / 企业授权联系作者走 C 转 B 授权。
+
 ## 说明
 
 - 所有技能坚持：真实宣传、合规经营、不承诺收益、不碰灰产。
