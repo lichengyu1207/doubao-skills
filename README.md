@@ -8,11 +8,12 @@
 
 **① ClawHub（OpenClaw 官方注册表）——只给名字就能装**
 ```bash
-openclaw skills search "yihaiyoudao"                       # 搜到全部 5 个技能
-openclaw skills install @lichengyu1207/zhanlue-peipao      # 按名字装（5 个技能同理）
+openclaw skills search "yihaiyoudao"                       # 搜到全部 6 个技能
+openclaw skills install @lichengyu1207/zhanlue-peipao      # 按名字装（6 个技能同理）
 openclaw skills install @lichengyu1207/yihaiyoudao
 openclaw skills install @lichengyu1207/qingchuang-shizhan
 openclaw skills install @lichengyu1207/pi-jev
+openclaw skills install @lichengyu1207/yijiandaodi-tixiao
 openclaw skills install @lichengyu1207/ip-peipao-9clients
 openclaw skills update --all                               # 以后自动更新
 ```
@@ -27,6 +28,7 @@ claude plugin install zhanlue-peipao@yihaiyoudao-skills
 claude plugin install qingchuang-shizhan@yihaiyoudao-skills
 claude plugin install yihaiyoudao@yihaiyoudao-skills
 claude plugin install pi-jev@yihaiyoudao-skills
+claude plugin install yijiandaodi-tixiao@yihaiyoudao-skills
 ```
 
 **④ 其他命令行工具（Gemini / GitHub CLI / npx / OpenClaw）——一条 install 命令**
@@ -43,6 +45,7 @@ gemini skills install https://github.com/lichengyu1207/yihaiyoudao-skills.git
 | [qingchuang-shizhan](qingchuang-shizhan/) | 内容创业与轻创业实操教练：定位、内容生产、多平台分发、获客私域、合规变现、现金流风控 |
 | [yihaiyoudao](yihaiyoudao/) | 内容审核与原创改造：原创性判定、限流风险词库与替换、观点化改造、风格统一 |
 | [pi-jev](pi-jev/) | 决策层：Jev 式自动选技能 + 模型档位路由 + 使用学习；新任务先跑它确定用哪个技能 |
+| [yijiandaodi-tixiao](yijiandaodi-tixiao/) | AI 操作安全审计与提效：敏感信息检测脱敏、哈希链存证、文件/剪贴板监控、AIGC 本地校验（能力融合自 [yijiandaodi-core](https://github.com/lichengyu1207/yijiandaodi-core)） |
 | [ip-peipao-9clients](ip-peipao-9clients/) | 9 大核心客户陪跑与转化：客户档案、分层跟进（9.9 体验群→600 陪跑→企业版）、每日/每周 SOP、私信话术（独立仓库：lichengyu1207/ip-peipao-9clients） |
 
 ## 快速安装（zip 方式）
@@ -65,6 +68,7 @@ claude plugin install zhanlue-peipao@yihaiyoudao-skills
 claude plugin install qingchuang-shizhan@yihaiyoudao-skills
 claude plugin install yihaiyoudao@yihaiyoudao-skills
 claude plugin install pi-jev@yihaiyoudao-skills
+claude plugin install yijiandaodi-tixiao@yihaiyoudao-skills
 ```
 或直接复制技能文件夹到技能目录：
 ```bash
@@ -106,6 +110,7 @@ npx skills add https://github.com/lichengyu1207/yihaiyoudao-skills.git --skill p
 - "拿不准该用哪个技能" → pi-jev 决策层（`python pi-jev/scripts/pi_jev.py "任务"`，自动推荐技能、脚本命令与模型档位）
 - "今天跟进哪个客户、发什么私信" → ip-peipao-9clients
 - "这篇稿子会不会限流、怎么改" → yihaiyoudao
+- "这段文本有没有敏感信息、怎么脱敏、留个审计存证" → yijiandaodi-tixiao（`python yijiandaodi-tixiao/scripts/yjd.py check "文本"`）
 
 ## 配套软件：一鉴到底（yijiandaodi）
 
