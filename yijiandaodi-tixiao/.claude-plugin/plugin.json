@@ -1,0 +1,9 @@
+{
+  "name": "yijiandaodi-tixiao",
+  "version": "0.1.0",
+  "description": "一鉴到底·提效：AI 操作安全审计（敏感信息检测脱敏、哈希链存证、文件/剪贴板监控、AIGC 本地校验）",
+  "author": {
+    "name": "lichengyu1207"
+  },
+  "license": "MIT"
+}
